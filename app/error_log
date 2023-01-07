@@ -1,0 +1,1 @@
+[16-Aug-2020 07:52:07 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/o3y72k31f61i/public_html/agenttrackor.databoxstudio.com/app/AgentSupervisorMapping.php on line 7

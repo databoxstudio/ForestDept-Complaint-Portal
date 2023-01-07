@@ -1,0 +1,1199 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Delivery API",
+        "version": ""
+    },
+    "paths": {
+        "/public/api/update-basic-details": {
+            "post": {
+                "tags": [
+                    "Update Profile"
+                ],
+                "summary": "Update Basic Details",
+                "description": "Basic Details",
+                "operationId": "/public/api/update-basic-details",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "first_name": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "last_name": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "fathers_name": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "dob": {
+                                        "type": "string",
+                                        "example": "yyyy-mm-dd"
+                                    },
+                                    "blood_group": {
+                                        "type": "string",
+                                        "example": ""
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                },
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/public/api/update-local-address": {
+            "post": {
+                "tags": [
+                    "Update Profile"
+                ],
+                "summary": "Update Local Addreess Details",
+                "description": "Update Local Addreess Details",
+                "operationId": "/public/api/update-local-address",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "local_address_line_1": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "local_address_line_2": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "local_address_city": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "local_address_state": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "local_address_country": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "local_address_pincode": {
+                                        "type": "string",
+                                        "example": ""
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                },
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/public/api/update-permanent-address": {
+            "post": {
+                "tags": [
+                    "Update Profile"
+                ],
+                "summary": "Update permanent Addreess Details",
+                "description": "Update permanent Addreess Details",
+                "operationId": "/public/api/update-permanent-address",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "permanent_address_line_1": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "permanent_address_line_2": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "permanent_address_city": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "permanent_address_state": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "permanent_address_country": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "permanent_address_pincode": {
+                                        "type": "string",
+                                        "example": ""
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                },
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/public/api/update-kyc-aadhar": {
+            "post": {
+                "tags": [
+                    "Update Profile"
+                ],
+                "summary": "Update Update KYC Aadhar",
+                "description": "Update KYC Aadhar",
+                "operationId": "/public/api/update-kyc-aadhar",
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "properties": {
+                                    "aadhar_number": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "name_on_aadhar_card": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "aadhar_front_snap": {
+                                        "type": "string",
+                                        "format": "binary",
+                                        "example": ""
+                                    },
+                                    "aadhar_back_snap": {
+                                        "type": "string",
+                                        "format": "binary",
+                                        "example": ""
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                },
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/public/api/update-kyc-driving-licence": {
+            "post": {
+                "tags": [
+                    "Update Profile"
+                ],
+                "summary": "Update Driving Licence",
+                "description": "Update KYC Driving Licence",
+                "operationId": "/public/api/update-kyc-driving-licence",
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "properties": {
+                                    "driving_licence_number": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "name_as_on_dl": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "dob_dl": {
+                                        "type": "string",
+                                        "example": "yyyy-mm-dd"
+                                    },
+                                    "dl_issue_date": {
+                                        "type": "string",
+                                        "example": "yyyy-mm-dd"
+                                    },
+                                    "dl_expiry_date": {
+                                        "type": "string",
+                                        "example": "yyyy-mm-dd"
+                                    },
+                                    "issued_state": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "dl_front_snap": {
+                                        "type": "string",
+                                        "format": "binary",
+                                        "example": ""
+                                    },
+                                    "dl_back_snap": {
+                                        "type": "string",
+                                        "format": "binary",
+                                        "example": ""
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                },
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/public/api/update-kyc-pan": {
+            "post": {
+                "tags": [
+                    "Update Profile"
+                ],
+                "summary": "Update PAN",
+                "description": "Update KYC PAN",
+                "operationId": "/public/api/update-kyc-pan",
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "properties": {
+                                    "pan_number": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "name_as_on_pancard": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "pan_front_snap": {
+                                        "type": "string",
+                                        "format": "binary",
+                                        "example": ""
+                                    },
+                                    "pan_back_snap": {
+                                        "type": "string",
+                                        "format": "binary",
+                                        "example": ""
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                },
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/public/api/update-bank-account": {
+            "post": {
+                "tags": [
+                    "Update Profile"
+                ],
+                "summary": "Update Bank Account Details",
+                "description": "Update Bank Details",
+                "operationId": "/public/api/update-bank-account",
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "properties": {
+                                    "bank_ac_number": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "account_holder_name": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "bank_name": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "ifsc_code": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "branch_name": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "cancel_cheque_snap": {
+                                        "type": "string",
+                                        "format": "binary",
+                                        "example": ""
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                },
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/public/api/get-profile-updated-status": {
+            "get": {
+                "tags": [
+                    "Update Profile"
+                ],
+                "summary": "Get Profile status",
+                "description": "Get Profile status",
+                "operationId": "/public/api/get-profile-updated-status",
+                "requestBody": {},
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                },
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/public/api/start-day": {
+            "post": {
+                "tags": [
+                    "Agent Login"
+                ],
+                "summary": "Start Day",
+                "description": "Start Day",
+                "operationId": "/public/api/start-day",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "warehouse_id": {
+                                        "type": "string",
+                                        "example": "Dropdown"
+                                    },
+                                    "supervisor_id": {
+                                        "type": "string",
+                                        "example": "Dropdown"
+                                    },
+                                    "delivery_type_id": {
+                                        "type": "string",
+                                        "example": "dropdown"
+                                    },
+                                    "collected_package": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "c_returned_package": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "login_latitude": {
+                                        "type": "string",
+                                        "example": "Current Location latitude"
+                                    },
+                                    "login_longitude": {
+                                        "type": "string",
+                                        "example": "Current location longitude"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                },
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/public/api/end-day": {
+            "post": {
+                "tags": [
+                    "Agent Login"
+                ],
+                "summary": "End Day",
+                "description": "End Day",
+                "operationId": "/public/api/end-day",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "delivered_package": {
+                                        "type": "string",
+                                        "example": "Dropdown"
+                                    },
+                                    "logout_latitude": {
+                                        "type": "string",
+                                        "example": "Current Location latitude"
+                                    },
+                                    "logout_longitude": {
+                                        "type": "string",
+                                        "example": "Current location longitude"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                },
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/public/api/resend-otp": {
+            "post": {
+                "tags": [
+                    "Login with OTP"
+                ],
+                "summary": "Resend OTP",
+                "description": "Resend OTP sent to phone number while login",
+                "operationId": "/public/api/resend-otp",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "phone_number": {
+                                        "type": "string",
+                                        "example": "+91XXXXXXXXXX"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                }
+            }
+        },
+        "/public/api/verify-otp": {
+            "post": {
+                "tags": [
+                    "Login with OTP"
+                ],
+                "summary": "Verify OTP",
+                "description": "Verify OTP sent to phone number while login",
+                "operationId": "/public/api/verify-otp",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "phone_number": {
+                                        "type": "string",
+                                        "example": "+91XXXXXXXXXX"
+                                    },
+                                    "verification_code": {
+                                        "type": "string",
+                                        "example": ""
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                }
+            }
+        },
+        "/public/api/login": {
+            "post": {
+                "tags": [
+                    "Login"
+                ],
+                "summary": "Login",
+                "description": "Login with phone number and password",
+                "operationId": "/public/api/login",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "phone_number": {
+                                        "type": "string",
+                                        "example": "+91XXXXXXXXXX"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "example": ""
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                }
+            }
+        },
+        "/public/api/login-with-otp": {
+            "post": {
+                "tags": [
+                    "Login with OTP"
+                ],
+                "summary": "Login with OTP",
+                "description": "Login sending otp on phone number",
+                "operationId": "/public/api/login-with-otp",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "phone_number": {
+                                        "type": "string",
+                                        "example": "+91XXXXXXXXXX"
+                                    },
+                                    "user_type": {
+                                        "type": "string",
+                                        "example": "agent/supervisor"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                }
+            }
+        },
+        "/public/api/logout": {
+            "get": {
+                "tags": [
+                    "Logout"
+                ],
+                "summary": "Logout user",
+                "description": "Logout",
+                "operationId": "/public/api/logout",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                },
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/public/api/send-forgot-password-otp": {
+            "post": {
+                "tags": [
+                    "Forgot Password OTP"
+                ],
+                "summary": "Resend OTP",
+                "description": "Send OTP sent to phone number for forgot password",
+                "operationId": "/public/api/send-forgot-password-otp",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "phone_number": {
+                                        "type": "string",
+                                        "example": "+91XXXXXXXXXX"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                }
+            }
+        },
+        "/public/api/verify-forgot-password-otp": {
+            "post": {
+                "tags": [
+                    "Forgot Password OTP"
+                ],
+                "summary": "Verify OTP",
+                "description": "Verify OTP sent to phone number while fotgot password",
+                "operationId": "/public/api/verify-forgot-password-otp",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "phone_number": {
+                                        "type": "string",
+                                        "example": "+91XXXXXXXXXX"
+                                    },
+                                    "verification_code": {
+                                        "type": "string",
+                                        "example": ""
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                }
+            }
+        },
+        "/public/api/reset-password": {
+            "post": {
+                "tags": [
+                    "Forgot Password OTP"
+                ],
+                "summary": "Reset Password",
+                "description": "Reset password",
+                "operationId": "/public/api/reset-password",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "phone_number": {
+                                        "type": "string",
+                                        "example": "+91XXXXXXXXXX"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "example": ""
+                                    },
+                                    "password_confirmation": {
+                                        "type": "string",
+                                        "example": ""
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                }
+            }
+        },
+        "/public/api/get-dropdowns": {
+            "get": {
+                "tags": [
+                    "Get Dropdowns"
+                ],
+                "summary": "Get Dropdowns",
+                "description": "Get Dropdowns",
+                "operationId": "/public/api/get-dropdowns",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                },
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/public/api/supervisor/start-day": {
+            "post": {
+                "tags": [
+                    "Supervisor Login"
+                ],
+                "summary": "Start Day",
+                "description": "Start Day",
+                "operationId": "/public/api/supervisor/start-day",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "warehouse_id": {
+                                        "type": "string",
+                                        "example": "Dropdown"
+                                    },
+                                    "login_latitude": {
+                                        "type": "string",
+                                        "example": "Current Location latitude"
+                                    },
+                                    "login_longitude": {
+                                        "type": "string",
+                                        "example": "Current location longitude"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                },
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/public/api/supervisor/end-day": {
+            "post": {
+                "tags": [
+                    "Supervisor Login"
+                ],
+                "summary": "End Day",
+                "description": "End Day",
+                "operationId": "/public/api/supervisor/end-day",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "logout_latitude": {
+                                        "type": "string",
+                                        "example": "Current Location latitude"
+                                    },
+                                    "logout_longitude": {
+                                        "type": "string",
+                                        "example": "Current location longitude"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                },
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/public/api/supervisor/get-agent-list": {
+            "get": {
+                "tags": [
+                    "Supervisor Login"
+                ],
+                "summary": "Agent List",
+                "description": "Agent List",
+                "operationId": "/public/api/supervisor/get-agent-list",
+                "requestBody": {},
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                },
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/public/api/supervisor/agent-view": {
+            "get": {
+                "tags": [
+                    "Supervisor Login"
+                ],
+                "summary": "Agent View",
+                "description": "Agent View",
+                "operationId": "/public/api/supervisor/agent-view",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "",
+                        "explode": true
+                    }
+                ],
+                "requestBody": {},
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                },
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/public/api/supervisor/edit-delivery-type": {
+            "post": {
+                "tags": [
+                    "Supervisor Login"
+                ],
+                "summary": "edit Delivery Type",
+                "description": "edit Delivery Type",
+                "operationId": "/public/api/supervisor/edit-delivery-type",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "",
+                        "explode": true
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "properties": {
+                                    "delivery_type_id": {
+                                        "type": "string",
+                                        "example": ""
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                },
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/public/api/supervisor/download-profile-document": {
+            "get": {
+                "tags": [
+                    "Supervisor Login"
+                ],
+                "summary": "download Profile Document",
+                "description": "download Profile Document",
+                "operationId": "/public/api/supervisor/download-profile-document",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "",
+                        "explode": true
+                    }
+                ],
+                "requestBody": {},
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                },
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "bearer": {
+                "type": "http",
+                "scheme": "bearer",
+                "bearerFormat": "PASSPORT"
+            }
+        }
+    }
+}

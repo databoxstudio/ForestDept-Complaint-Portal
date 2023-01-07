@@ -1,0 +1,92 @@
+.hidden{
+    display:none;
+    }
+    .third {
+    float: left;
+    width: calc((100% - 32px) / 3);
+    padding: 0;
+    margin: 0 16px 16px 0;
+    }
+    .third:last-of-type {
+    margin-right: 0;
+    }
+    a.nav-link._login {
+     display: inline-block;
+     margin-left: 35px;
+     padding: 0;
+ }
+    /* Define how SqPaymentForm iframes should look */
+    .sq-input {
+    height: 56px;
+    box-sizing: border-box;
+    border: 1px solid #E0E2E3;
+    background-color: white;
+    border-radius: 6px;
+    display: inline-block;
+    -webkit-transition: border-color .2s ease-in-out;
+    -moz-transition: border-color .2s ease-in-out;
+    -ms-transition: border-color .2s ease-in-out;
+    transition: border-color .2s ease-in-out;
+    }
+    /* Define how SqPaymentForm iframes should look when they have focus */
+    .sq-input--focus {
+    border: 1px solid #4A90E2;
+    }
+    /* Define how SqPaymentForm iframes should look when they contain invalid values */
+    .sq-input--error {
+    border: 1px solid #E02F2F;
+    }
+    #sq-card-number {
+    margin-bottom: 16px;
+    }
+    .card-form-group {
+     position: relative;
+ }
+ .card-form-group h4.card-title {
+     margin-bottom: 10px;
+     text-transform: uppercase;
+     font-weight: 500;
+     font-size: 16px;
+ }
+ .card-img-holder {
+     position: absolute;
+     right: 0;
+     top: 0;
+ }
+ .img-holder {
+     display: flex;
+ }
+ .img-holder li {
+     margin-left: 4px;
+ }
+ .img-holder li img {
+     max-width: 35px;
+ }
+ .place-btn-holder {
+     float: left;
+     width: 100%;
+     padding: 8px 0;
+ }
+ .place-btn-holder #sq-creditcard {
+     padding: 12px;
+     /*width: 100%;*/
+     text-transform: uppercase;
+     font-size: 16px;
+ }
+ .price-table-holder td.width-20 {
+    width: 20%;
+    text-align: right;
+}
+.price-table-holder td.width-80 {
+    width: 80%;
+}
+.price-table-holder .seperater {
+    width: 100%;
+    height: 1px;
+    background: #d0d0d0;
+    margin: 8px 0;
+}
+.price-table-holder .table-responsive {
+    max-width: 100%;
+    overflow: auto;
+}
